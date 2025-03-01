@@ -16,7 +16,7 @@
   },
   "license": "ISC",
   "author": "Joshua Cadavez",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
