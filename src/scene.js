@@ -7,8 +7,8 @@ export class Scene {
         this.text = text;
         this.choices = choices;
     }
+
     async play() {
-        // TODO: need to find a way to record or save user input for the rest of the whole game
         switch (this.type) {
             case 'dialogue': {
                 await new Promise((resolve) => {
@@ -25,8 +25,7 @@ export class Scene {
                         if (error) {
                             reject(new Error(error));
                         } else {
-                            terminal('\n');
-                            resolve(response);
+                            resolve(response.trim());
                         }
                     });
                 });
@@ -41,8 +40,7 @@ export class Scene {
                         if (error) {
                             reject(new Error(error));
                         } else {
-                            terminal('\n');
-                            resolve(response.selectedText);
+                            resolve(response.selectedText.trim());
                         }
                     });
                 });
