@@ -1,4 +1,4 @@
-name: Test Workflow
+name: Tests Workflow
 
 on:
   pull_request:
@@ -12,7 +12,6 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "23.x"
           cache: "npm"
       - run: npm ci
       - run: npm run test
