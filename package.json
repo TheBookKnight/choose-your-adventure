@@ -1,23 +1,23 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
-  "description": "Node template",
+  "name": "choose-your-adventure",
+  "version": "1.1.0",
+  "description": "CLI template for Choose Your Adventure games",
   "keywords": [
     "nodejs",
     "javascript"
   ],
-  "homepage": "https://github.com/TheBookKnight/nodejs#readme",
+  "homepage": "https://github.com/TheBookKnight/choose-your-adventure#readme",
   "bugs": {
-    "url": "https://github.com/TheBookKnight/nodejs/issues"
+    "url": "https://github.com/TheBookKnight/choose-your-adventure/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheBookKnight/nodejs.git"
+    "url": "git@github.com:TheBookKnight/choose-your-adventure.git"
   },
   "license": "ISC",
   "author": "Joshua Cadavez",
   "type": "module",
-  "main": "index.js",
+  "main": "./example/index.js",
   "scripts": {
     "lint": "eslint .",
     "start:example": "node ./example/index.js",
