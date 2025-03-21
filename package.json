@@ -1,6 +1,6 @@
 {
   "name": "choose-your-adventure",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CLI template for Choose Your Adventure games",
   "keywords": [
     "nodejs",
