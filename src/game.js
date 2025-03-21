@@ -2,7 +2,7 @@ import { Chapter } from './chapter.js';
 import pkg from 'terminal-kit';
 const terminal = pkg.terminal;
 
-export class GameEngine {
+export class Game {
     constructor(title, chapters = []) {
         this.title = title;
         this.chapters = [];
@@ -16,7 +16,9 @@ export class GameEngine {
 
     async playFromBeginning() {
         await terminal.slowTyping(`You are playing "${this.title}!"\n`);
-        await terminal.spinner();
+
+        await terminal.spinner()
+
         await terminal.slowTyping('\tLoading game...\n');
         for (const chapter of this.chapters) {
             if (chapter instanceof Chapter) {
@@ -25,5 +27,7 @@ export class GameEngine {
                 throw new Error('Invalid chapter. Only Chapter objects are allowed.');
             }
         };
+        terminal('Game completed!');
+        process.exit()
     }
 }
