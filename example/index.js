@@ -1,4 +1,4 @@
-import { GameEngine } from "../src/game-engine.js";
+import { GameEngine } from "../index.js";
 import { intro } from "./chapters/intro.js";
 
 function startGame() {
