@@ -27,8 +27,7 @@ export class Chapter {
         });
         for (const scene of this.plot) {
             if (scene instanceof Scene) {
-                const sceneData = await scene.play();
-                terminal(`\nYou chose ${sceneData}\n`);
+                await scene.play();
             } else {
                 throw new Error('Invalid chapter plot. Only Scene objects are allowed.');
             }
