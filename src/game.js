@@ -2,7 +2,7 @@ import { Chapter } from './chapter.js';
 import pkg from 'terminal-kit';
 const terminal = pkg.terminal;
 
-export class GameEngine {
+export class Game {
     constructor(title, chapters = []) {
         this.title = title;
         this.chapters = [];
